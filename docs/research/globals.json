@@ -1,0 +1,120 @@
+{
+  "fonts": [
+    "\"Times New Roman\""
+  ],
+  "colors": [
+    "rgb(0, 0, 0)",
+    "rgb(160, 165, 177)",
+    "rgb(160, 165, 177) none repeat scroll 0% 0% / auto padding-box border-box"
+  ],
+  "links": [
+    {
+      "rel": "icon",
+      "href": "https://www.igloo.inc/assets/favicon32-af94112f.png",
+      "as": ""
+    },
+    {
+      "rel": "icon",
+      "href": "https://www.igloo.inc/assets/favicon16-9e4401be.png",
+      "as": ""
+    }
+  ],
+  "scripts": [
+    "https://www.igloo.inc/assets/index-2d900c2d.js"
+  ],
+  "images": [],
+  "videos": [],
+  "bgImages": [],
+  "svgCount": 0,
+  "favicons": [
+    {
+      "href": "https://www.igloo.inc/assets/favicon32-af94112f.png",
+      "sizes": "32x32",
+      "rel": "icon"
+    },
+    {
+      "href": "https://www.igloo.inc/assets/favicon16-9e4401be.png",
+      "sizes": "16x16",
+      "rel": "icon"
+    }
+  ],
+  "scrollLibraries": {
+    "lenis": false,
+    "locomotive": false
+  },
+  "meta": {
+    "title": "Igloo Inc.",
+    "description": "Our mission is to create the largest onchain community, driving the consumer crypto revolution.",
+    "ogImage": "https://www.igloo.inc/assets/images/social.jpg"
+  },
+  "bodyStyles": {
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "fontFamily": "\"Times New Roman\"",
+    "color": "rgb(0, 0, 0)",
+    "backgroundColor": "rgb(160, 165, 177)",
+    "background": "rgb(160, 165, 177) none repeat scroll 0% 0% / auto padding-box border-box",
+    "padding": "0px",
+    "paddingTop": "0px",
+    "paddingRight": "0px",
+    "paddingBottom": "0px",
+    "paddingLeft": "0px",
+    "margin": "0px",
+    "marginTop": "0px",
+    "marginRight": "0px",
+    "marginBottom": "0px",
+    "marginLeft": "0px",
+    "width": "1440px",
+    "height": "900px",
+    "minWidth": "0px",
+    "minHeight": "0px",
+    "display": "block",
+    "flexDirection": "row",
+    "borderRadius": "0px",
+    "border": "0px none rgb(0, 0, 0)",
+    "borderTop": "0px none rgb(0, 0, 0)",
+    "borderBottom": "0px none rgb(0, 0, 0)",
+    "borderLeft": "0px none rgb(0, 0, 0)",
+    "borderRight": "0px none rgb(0, 0, 0)",
+    "overflow": "hidden",
+    "overflowX": "hidden",
+    "overflowY": "hidden",
+    "position": "static",
+    "opacity": "1",
+    "transition": "all",
+    "objectFit": "fill",
+    "objectPosition": "50% 50%",
+    "textOverflow": "clip",
+    "animationDuration": "0s"
+  },
+  "rootCSSVars": {
+    "--bgColor": "#A0A5B1",
+    "--default-font": "sans-serif"
+  },
+  "sections": [
+    {
+      "tag": "div",
+      "id": "webgl",
+      "classes": "",
+      "approxHeight": 900,
+      "approxTop": 0,
+      "childCount": 1,
+      "hasVideo": false,
+      "hasCanvas": false,
+      "hasIframe": false
+    },
+    {
+      "tag": "style",
+      "id": null,
+      "classes": "",
+      "approxHeight": 0,
+      "approxTop": 0,
+      "childCount": 0,
+      "hasVideo": false,
+      "hasCanvas": false,
+      "hasIframe": false
+    }
+  ],
+  "pageHeight": 900,
+  "pageWidth": 1440
+}

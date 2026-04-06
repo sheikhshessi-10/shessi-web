@@ -1,0 +1,31 @@
+{
+  "target": "https://www.igloo.inc/",
+  "timestamp": "2026-04-06T17:27:35.512Z",
+  "screenshots": {
+    "desktop": "docs/design-references/igloo-desktop-1440.png",
+    "mobile": "docs/design-references/igloo-mobile-390.png",
+    "tablet": "docs/design-references/igloo-tablet-768.png",
+    "scrollCaptures": 3
+  },
+  "fonts": [
+    "\"Times New Roman\""
+  ],
+  "rootCSSVars": 2,
+  "imageCount": 0,
+  "videoCount": 0,
+  "svgCount": 0,
+  "bgImageCount": 0,
+  "sectionCount": 2,
+  "scrollLibraries": {
+    "lenis": false,
+    "locomotive": false
+  },
+  "pageHeight": 900,
+  "meta": {
+    "title": "Igloo Inc.",
+    "description": "Our mission is to create the largest onchain community, driving the consumer crypto revolution.",
+    "ogImage": "https://www.igloo.inc/assets/images/social.jpg"
+  },
+  "headerHasScrollState": false,
+  "interactiveCount": 0
+}

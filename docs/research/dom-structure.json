@@ -1,0 +1,48 @@
+{
+  "tag": "body",
+  "childCount": 1,
+  "children": [
+    {
+      "tag": "div",
+      "id": "app",
+      "classes": "",
+      "rect": {
+        "top": 0,
+        "height": 900,
+        "width": 1440
+      },
+      "display": "block",
+      "position": "absolute",
+      "hasVideo": false,
+      "hasCanvas": false,
+      "childCount": 2,
+      "children": [
+        {
+          "tag": "div",
+          "id": "webgl",
+          "classes": "",
+          "rect": {
+            "top": 0,
+            "height": 900,
+            "width": 1440
+          },
+          "display": "block",
+          "childCount": 1
+        },
+        {
+          "tag": "style",
+          "id": null,
+          "classes": "",
+          "rect": {
+            "top": 0,
+            "height": 0,
+            "width": 0
+          },
+          "display": "none",
+          "childCount": 0,
+          "text": "/* js */\n        div#webgl {\n            display: block;\n            position: absolute;\n           "
+        }
+      ]
+    }
+  ]
+}

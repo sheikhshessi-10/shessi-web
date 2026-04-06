@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #04070f;
+  --accent: #5b8cff;
+  --accent-2: #a78bfa;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.45);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  cursor: none;
+}
+
+/* Hide default scrollbar — custom scroll handled by Lenis */
+::-webkit-scrollbar { display: none; }
+
+::selection {
+  background: rgba(91, 140, 255, 0.25);
+  color: #fff;
+}
+
+/* ── Mobile responsive helpers ─────────────────────────────────────────── */
+
+/* Hero text column: full-width on mobile, half on desktop */
+.hero-col {
+  width: 50vw;
+}
+@media (max-width: 768px) {
+  .hero-col {
+    width: 100vw;
+    padding-left: clamp(20px, 5vw, 48px) !important;
+    padding-right: clamp(20px, 5vw, 48px) !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Sections: tighter padding on mobile */
+@media (max-width: 768px) {
+  .section-pad {
+    padding-left: clamp(20px, 5vw, 48px) !important;
+    padding-right: clamp(20px, 5vw, 48px) !important;
+  }
+}
+
+/* Page overlay nav — hide esc hint on narrow screens */
+@media (max-width: 480px) {
+  .esc-hint { display: none !important; }
+}
+
+/* Touch: remove tap highlight on all tappable elements */
+button, a, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
