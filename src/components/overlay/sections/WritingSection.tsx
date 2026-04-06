@@ -208,7 +208,7 @@ function ArticleCard({ article, index, inView }: {
         <div style={{
           maxWidth: "680px",
           margin: "0 auto",
-          padding: "clamp(40px, 6vw, 72px) clamp(20px, 5vw, 48px)",
+          padding: "clamp(28px, 4vw, 52px) clamp(20px, 5vw, 48px) clamp(40px, 6vw, 72px)",
           width: "100%",
         }}>
           {/* Meta */}

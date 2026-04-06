@@ -119,7 +119,7 @@ export default function FullScreenCard({
         <div style={{
           maxWidth: "760px",
           margin: "0 auto",
-          padding: "clamp(40px, 6vw, 80px) clamp(20px, 5vw, 60px)",
+          padding: "clamp(28px, 4vw, 52px) clamp(20px, 5vw, 60px) clamp(40px, 6vw, 72px)",
           width: "100%",
         }}>
           {/* Eyebrow */}
