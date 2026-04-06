@@ -356,7 +356,7 @@ export default function WritingSection() {
               lineHeight: 1.1,
             }}
           >
-            Now I talk and AI writes for me.
+            Now I talk and AI creates a second brain for me. Some insights from there.
           </motion.h2>
         </div>
       </div>

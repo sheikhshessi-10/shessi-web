@@ -28,7 +28,7 @@ export default function Experience() {
           gl={{ antialias: true, alpha: false }}
           style={{ width: "100%", height: "100%" }}
         >
-          <ScrollControls pages={9} damping={0.08}>
+          <ScrollControls pages={10} damping={0.08}>
             <SceneWorld />
             <Scroll html style={{ width: "100%" }}>
               <HtmlOverlay />
