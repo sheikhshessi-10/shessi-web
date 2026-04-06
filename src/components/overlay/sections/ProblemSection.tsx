@@ -36,7 +36,7 @@ export default function ProblemSection() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        padding: "8rem clamp(48px, 8vw, 120px)",
+        padding: "4rem clamp(32px, 8vw, 120px) 6rem",
         position: "relative",
       }}
     >
