@@ -1,0 +1,49 @@
+/* Veil route (/veil) — scoped theme.
+   Reuses the Tailwind token NAMES already declared in globals.css (@theme),
+   but overrides their VALUES inside .veil-root, so the same utility classes
+   (bg-bg, text-primary, border-line, ...) render in Veil's space palette
+   here and BidPro's amber palette under .bidpro-root. Pure black, cyan +
+   violet accents. */
+
+.veil-root {
+  --color-bg: #03040a;
+  --color-surface: #090c15;
+  --color-card: #0d111c;
+  --color-line: rgba(255, 255, 255, 0.07);
+  --color-line-strong: rgba(255, 255, 255, 0.14);
+  --color-primary: #22d3ee;
+  --color-primary-bright: #67e8f9;
+  --color-accent: #8b5cf6;
+  --color-text: #e8eef7;
+  --color-muted: #8893a8;
+
+  cursor: auto;
+  background: var(--color-bg);
+}
+
+.veil-root a,
+.veil-root button,
+.veil-root [role="button"] {
+  cursor: pointer;
+}
+
+.veil-root *,
+.veil-root *::before,
+.veil-root *::after {
+  border-color: var(--color-line);
+}
+
+.veil-root ::selection {
+  background: rgba(34, 211, 238, 0.28);
+  color: #fff;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 1; }
+}
+
+@keyframes drift-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}

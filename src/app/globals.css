@@ -71,3 +71,62 @@ button, a, [role="button"] {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 }
+
+/* ══════════════════════════════════════════════════════════════════════
+   BidPro route (/bidpro) — scoped design tokens. Additive: these color/
+   font names are not used elsewhere in the portfolio. Route-scoped resets
+   (cursor, default border-color) live in src/app/bidpro/bidpro.css.
+   ══════════════════════════════════════════════════════════════════════ */
+@theme {
+  --color-bg: #0a0c10;
+  --color-surface: #11141a;
+  --color-card: #171b22;
+  --color-line: rgba(255, 255, 255, 0.06);
+  --color-line-strong: rgba(255, 255, 255, 0.12);
+  --color-primary: #f59e0b;
+  --color-primary-bright: #fb923c;
+  --color-accent: #5eead4;
+  --color-text: #f4f5f7;
+  --color-muted: #8a93a2;
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes aurora-a {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(6%, -4%, 0) scale(1.18); }
+}
+@keyframes aurora-b {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1.12); }
+  50% { transform: translate3d(-7%, 5%, 0) scale(1); }
+}
+@keyframes scan {
+  0% { top: 0%; opacity: 0; }
+  12% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}

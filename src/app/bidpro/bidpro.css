@@ -1,0 +1,28 @@
+/* Route-scoped resets for /bidpro.
+   The portfolio hides the cursor globally (cursor:none) and Lenis runs a
+   custom scroll. BidPro is a standard landing page, so restore the cursor
+   and set a sensible default border color inside the route only. */
+
+.bidpro-root {
+  cursor: auto;
+}
+
+.bidpro-root a,
+.bidpro-root button,
+.bidpro-root [role="button"] {
+  cursor: pointer;
+}
+
+/* Tailwind v4 defaults bare `border` to currentColor; inside BidPro the
+   intended default is the hairline token. Utility color classes (border-primary,
+   border-line-strong, divide-*) keep winning on specificity. */
+.bidpro-root *,
+.bidpro-root *::before,
+.bidpro-root *::after {
+  border-color: var(--color-line);
+}
+
+.bidpro-root ::selection {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fff;
+}
