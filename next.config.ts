@@ -1,18 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // The LGS Bid Dashboard (PortalPro) is a static Vite SPA living in public/lgs.
-  // Real files (public/lgs/assets/*) serve directly; afterFiles runs only when no
-  // file matches, so client-side routes like /lgs/all fall back to the SPA shell.
-  async rewrites() {
-    return {
-      afterFiles: [
-        { source: "/lgs", destination: "/lgs/index.html" },
-        { source: "/lgs/:path*", destination: "/lgs/index.html" },
-      ],
-      beforeFiles: [],
-      fallback: [],
-    };
+  // The LGS product moved to its own home (2026-08-28): /lgs now forwards to
+  // looksgreatservices.shessi.dev. The old static SPA copy in public/lgs is
+  // retired behind this redirect (files left in place, unreachable).
+  // Temporary (307), not permanent, so browsers don't cache it forever if the
+  // path is ever repurposed.
+  async redirects() {
+    return [
+      { source: "/lgs", destination: "https://looksgreatservices.shessi.dev", permanent: false },
+      { source: "/lgs/:path*", destination: "https://looksgreatservices.shessi.dev", permanent: false },
+    ];
   },
 };
 
